@@ -13,7 +13,7 @@ url: "./the-process"
 </div>
 
 <div style="text-align: center; display: inline-block; text-align: left;">
-    <h4>Depending on the complexity of the project the entire process can take from three weeks to 12 weeks.</h4>
+    <h4>Depending on the complexity of the project the entire process can take from 3 weeks to 12 weeks.</h4>
 </div>
 
 <ol type="i">
