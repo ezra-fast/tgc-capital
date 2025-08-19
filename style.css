@@ -1,0 +1,171 @@
+/* Import only the Open Sans font once */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+/* 1. Basic reset & box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Body typography */
+html { font-family: 'Open Sans', sans-serif; font-size: 16px; }
+body {
+  line-height: 1.5;
+  color: #606c71;
+}
+
+/* 3. Links */
+a {
+  color: #1e6bb8;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.2em 0.4em;
+}
+a:not(.linkedin-links):hover {                          /* the linkedin links skip these properties thanks to not() */
+  /*https://www.w3schools.com/cssref/sel_hover.php*/
+  color: #000000;
+  background-color: #8C6B12;
+  border-radius: 0.7rem;
+}
+
+/* 4. Header */
+.page-header {
+  text-align: center;
+  background-color: #000;
+  color: #A67C3B;
+  padding: 2rem 1rem;
+}
+.project-name {
+  font-size: 3rem;
+  margin-bottom: 0.2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.project-tagline {
+  font-size: 1.3rem;
+  font-weight: normal;
+  opacity: 0.7;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* 4.5 Container div */
+.container {
+    max-width: 100%;
+}
+
+/* 5. Navigation */
+.nav-list {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+.nav-list li {
+  display: inline-block;
+  margin-right: 2rem;
+}
+.nav-list li:last-child {
+  margin-right: 0;
+}
+
+/* 6. Main content */
+.main-content {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  word-wrap: break-word;
+}
+.main-content h1,
+.main-content h2,
+.main-content h3 {
+  color: #A67C3B;
+  margin: 1.5rem 0 0.75rem;
+  font-weight: normal;
+  text-align: center;
+}
+.main-content p,
+.main-content ul,
+.main-content ol {
+  font-size: 1.1rem;
+  margin-bottom: 1em;
+}
+.main-content ul ul,
+.main-content ol ol {
+  margin-top: 0.5em;
+  margin-left: 1.5rem;
+}
+
+.left-indent {
+    margin-left: 30px;
+}
+
+.debt-organization {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.contact-list {               /* https://stackoverflow.com/questions/19443013/how-to-center-an-unordered-list */
+  display: table;
+  margin: 0 auto;
+}
+.partner-title {
+  text-align: center;
+  font-weight: bold;
+  color: #A67C3B;
+}
+
+#process-disclaimer {
+  font-weight: normal;
+}
+
+.accounts-sub-header {
+  color: #A67C3B;
+  text-align: left;
+  font-weight: normal;
+}
+
+/* fixing the LinkedIn links */
+
+.linkedin-links {
+  padding: 0em 0em; 
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.contact-title-sub-headers {
+  color: #A67C3B;
+  text-align: center;
+  font-weight: normal;
+}
+
+/* Styling for the getting started page */
+
+#getting-started-header {
+  margin-bottom: 2rem;
+}
+
+/* 7. Footer */
+.site-footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* 8. 404 page overrides */
+.error-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: center;
+}
+.error-code {
+  font-size: 4em;
+  line-height: 1;
+  letter-spacing: -1px;
+  margin-bottom: 1rem;
+}
+
